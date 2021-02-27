@@ -55,7 +55,7 @@
     color: #e2e2e2;
   }
   
-  .todo-button {
+  .todo-btn {
     padding: 16px;
     border: none;
     border-radius: 0 4px 4px 0;
@@ -106,7 +106,7 @@
     width: 90%;
   }
   
-  .todo-row:nth-child(4n + 1) {
+  /* .todo-row:nth-child(4n + 1) {
     background: linear-gradient(
       90deg,
       rgba(93, 12, 255, 1) 0%,
@@ -128,7 +128,7 @@
       rgba(20, 159, 255, 1) 0%,
       rgba(17, 122, 255, 1) 100%
     );
-  }
+  } */
   
   .icons {
     display: flex;

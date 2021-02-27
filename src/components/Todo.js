@@ -11,7 +11,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
     });
 
     const submitUpdate = value => {
-        updateTodo(edit.id,value)
+        updateTodo(edit.id, value)
         setEdit({
             id: null,
             value: ""
@@ -31,7 +31,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
             <div key={todo.id} onClick={() => completeTodo(todo.id)}>
                 {todo.text}
             </div>
-            <div className="icon">
+            <div className="icons">
                 <RiCloseCircleLine
                     onClick={() => removeTodo(todo.id)}
                     className="delete-icon"

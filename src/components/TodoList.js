@@ -29,9 +29,9 @@ function TodoList() {
     const completeTodo = id => {
         let updatedTodos = todos.map(todo => {
             if (todo.id === id) {
-                todo.isComplete = !todo.isComplete
+                todo.isComplete = !todo.isComplete;
             }
-            return todo
+            return todo;
         });
         setTodos(updatedTodos);
     };
@@ -42,7 +42,7 @@ function TodoList() {
             <TodoForm onSubmit={addTodo} />
             <Todo
                 todos={todos}
-                competeTodo={completeTodo} removeTodo={removeTodo}
+                completeTodo={completeTodo} removeTodo={removeTodo}
                 updateTodo={updateTodo}
             />
         </div>
